@@ -84,11 +84,6 @@ while True:
             '''Cropping an another frame from the detected face rectangle'''
             frame_crop = frame[top + 10:top+height-100, left + 30: 
             left+width - 20]
-            
-
-
-
-
             # Show the cropped frame
             cv2.imshow("Cropped Frame", frame_crop)
 
@@ -129,5 +124,6 @@ while True:
 # Stop capturing video frames
 video_stream.stop()
 # closing all windows 
+# we can use any key we want just return the key we need
 cv2.destroyAllWindows()
 
