@@ -86,7 +86,7 @@ while True:
             left+width - 20]
             # Show the cropped frame
             cv2.imshow("Cropped Frame", frame_crop)
-
+            # masking process
             # Smoothing the cropped frame
             img_blur = cv2.GaussianBlur(np.array(frame_crop),(5,5), 
             sigmaX=1.7, sigmaY=1.7)
