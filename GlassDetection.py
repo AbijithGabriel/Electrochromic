@@ -127,3 +127,29 @@ video_stream.stop()
 # we can use any key we want just return the key we need
 cv2.destroyAllWindows()
 
+
+
+
+# while True:
+#     if video_stream.stopped is True:
+#         break
+#     else:
+#         # Reading the video frame
+#         frame = video_stream.read()
+#         # Convert the frame color-space to grayscale
+#         gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        
+#         rects = detector(gray, 1)
+#         # Get the coordinates of detected face
+#         for i, face_rect in enumerate(rects):
+#             left = face_rect.left() 
+#             top = face_rect.top()
+#             width = face_rect.right() - left
+#             height = face_rect.bottom() - top
+
+#             # Draw a rectangle around the detected face
+#             cv2.rectangle(frame, (left, top), (left+width, top+height),
+#                           (0,255,0), 2)
+#             # Draw a face name with the number. 
+#             cv2.putText(frame, f"Face {i+1}", (left - 10, top - 10), 
+#                         font_1, 0.7, (0, 255, 0), 2, cv2.LINE_AA)
